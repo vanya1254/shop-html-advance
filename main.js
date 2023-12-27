@@ -28,8 +28,13 @@ const createItem = (itemData, id) => {
 
   let content = item.querySelector(".item-content");
 
+  let linkTemplate = document.createElement("a");
+  linkTemplate.href = "/pages/product.html";
+
   let title = content.querySelector("h4");
-  title.innerHTML = itemData.title;
+  let linkTitle = linkTemplate.cloneNode(true);
+  linkTitle.innerHTML = itemData.title;
+  title.appendChild(linkTitle);
 
   let description = content.querySelector("p");
   description.innerHTML = itemData.description;
