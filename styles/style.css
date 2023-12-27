@@ -760,6 +760,10 @@ footer {
   position: relative;
   transition: 0.2s ease-in-out;
 }
+.cart-item-img {
+  width: 262px;
+  height: 306px;
+}
 .cart-item-content {
   display: flex;
   flex-flow: column wrap;

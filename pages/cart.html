@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Cart</title>
+    <script src="../cart.js" defer></script>
 </head>
 
 <body>
@@ -85,30 +86,22 @@
     <div class="center cart">
         <div class="cart-container">
             <div class="cart-items">
-                <div class="cart-item">
-                    <img src="/img/cart-items/item1.jpg" alt="item" class="cart-item-img">
-                    <div class="cart-item-content">
-                        <h2 class="cart-item-title">Mango People T-Shirt</h2>
-                        <ul class="cart-item-species">
-                            <li>Price: <span class="mark">$300</span></li>
-                            <li>Color: Red</li>
-                            <li>Size: Xl</li>
-                            <li>Quantity:<input value="2" type="number" class="cart-item-quantity"></li>
-                        </ul>
+                <div class="templateCartItem" style="display: none;">
+                    <div class="cart-item">
+                        <img src="" alt="item" class="cart-item-img">
+                        <div class="cart-item-content">
+                            <h2 class="cart-item-title"></h2>
+                            <ul class="cart-item-species">
+                                <li>Price: <span class="mark"></span></li>
+                                <li>Color: <span class="color"></span></li>
+                                <li>Size: <span class="size"></span></li>
+                                <li>Quantity:<input value="1" type="number" class="cart-item-quantity quantity">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="cart-item">
-                    <img src="/img/cart-items/item2.jpg" alt="item" class="cart-item-img">
-                    <div class="cart-item-content">
-                        <h2 class="cart-item-title">Mango People T-Shirt</h2>
-                        <ul class="cart-item-species">
-                            <li>Price: <span class="mark">$300</span></li>
-                            <li>Color: Red</li>
-                            <li>Size: Xl</li>
-                            <li>Quantity:<input value="2" type="number" class="cart-item-quantity"></li>
-                        </ul>
-                    </div>
-                </div>
+
             </div>
             <div class="cart-btns">
                 <button class="cart-btn">Clear Shopping Cart</button>

@@ -22,6 +22,11 @@
     position: relative;
     transition: 0.2s ease-in-out;
 
+    &-img {
+      width: 262px;
+      height: 306px;
+    }
+
     &-content {
       @include displayFlow(column, wrap);
 
